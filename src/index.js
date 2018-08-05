@@ -2,8 +2,9 @@ import merge from 'lodash.merge';
 import baseConfig from './config';
 
 /**
- * This function says hello.
- * @param options configuration object.
+ * This function return a session id middleware.
+ * The session id is placed at req.sessionID
+ * @param {config} options configuration object.
  * @returns an express session ID middleware.
  */
 function sessionId(options = {}) {
@@ -21,6 +22,7 @@ function sessionId(options = {}) {
       sessionCookie = config.genId();
     }
     res.cookie(cookieName, sessionCookie, { ...config.cookie, maxAge: config.idleTime });
+    req.sessionID = sessionCookie;
     return next();
   };
 }

@@ -24,15 +24,26 @@ myModule();
 
 #### Table of Contents
 
+-   [config](#config)
 -   [sessionId](#sessionid)
+
+### config
+
+**Properties**
+
+-   `idleTime` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** max IdleTime
+-   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Name of the cookie.
+-   `genId` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** function to generate id's
+-   `cookie` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** cookies configurations
 
 ### sessionId
 
-This function says hello.
+This function return a session id middleware.
+The session id is placed at req.sessionID
 
 **Parameters**
 
--   `options`  configuration object.
+-   `options` **[config](#config)** configuration object. (optional, default `{}`)
 
 Returns **any** an express session ID middleware.
 
