@@ -13,9 +13,25 @@ An express middleware for session ID
 ## Usage
 
 ```js
-import myModule from "express-session-id";
+import sessionId from 'express-session-id';
+import express from 'express';
+import cookieParser from 'cookie-parser';
 
-myModule();
+const app = express();
+app.use(cookieParser('my secret key'));
+app.use(sessionId({
+  idleTime: 10 * 1000 * 60, // 10 minutes
+  cookie: {
+    signed: true
+  }
+}))
+
+app.get('/', (req, res) => {
+  console.log(req.sessionID);
+  /*
+    Rest of the code
+  */
+});
 ```
 
 ## API
@@ -49,4 +65,4 @@ Returns **any** an express session ID middleware.
 
 ## License
 
-MIT © [Daniel Reisel](https://github.com/reisel)
+MIT © [Daniel Reisel](https://github.com/dreisel)

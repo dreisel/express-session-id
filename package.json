@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "An express middleware for session ID",
   "license": "MIT",
-  "repository": "reisel/express-session-id",
+  "repository": "dreisel/express-session-id",
   "main": "dist/index.js",
   "author": {
     "name": "Daniel Reisel",
     "email": "dreisel@gmail.com",
-    "url": "https://github.com/reisel"
+    "url": "https://github.com/dreisel"
   },
   "engines": {
     "node": ">=6"
@@ -25,8 +25,7 @@
     "docs": "documentation readme src --section=API",
     "postdocs": "git add README.md",
     "clean": "rimraf dist",
-    "flowbuild": "flow-copy-source src dist",
-    "prebuild": "npm run docs && npm run clean && npm run flowbuild",
+    "prebuild": "npm run docs && npm run clean",
     "build": "babel src -d dist",
     "preversion": "npm run lint && npm test && npm run build",
     "version": "standard-changelog && git add CHANGELOG.md",
