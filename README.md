@@ -2,7 +2,7 @@
 
 [![Generated with nod](https://img.shields.io/badge/generator-nod-2196F3.svg?style=flat-square)](https://github.com/diegohaz/nod)
 [![NPM version](https://img.shields.io/npm/v/express-session-id.svg?style=flat-square)](https://npmjs.org/package/express-session-id)
-[![Build Status](https://img.shields.io/travis/reisel/express-session-id/master.svg?style=flat-square)](https://travis-ci.org/reisel/express-session-id) [![Coverage Status](https://img.shields.io/codecov/c/github/reisel/express-session-id/master.svg?style=flat-square)](https://codecov.io/gh/reisel/express-session-id/branch/master)
+[![Build Status](https://img.shields.io/travis/dreisel/express-session-id/master.svg?style=flat-square)](https://travis-ci.org/dreisel/express-session-id) [![Coverage Status](https://img.shields.io/codecov/c/github/dreisel/express-session-id/master.svg?style=flat-square)](https://codecov.io/gh/dreisel/express-session-id/branch/master)
 
 An express middleware for session ID
 
