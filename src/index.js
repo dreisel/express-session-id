@@ -5,7 +5,7 @@ import baseConfig from './config';
  * This function return a session id middleware.
  * The session id is placed at req.sessionID
  * @param {object}   options
- * @param {number}   [options.idleTime=(30 * 1000 * 60)] - max idle time before destoying a session. env: SESSION_ID_IDLE_TIME
+ * @param {number}   [options.idleTime=(30 * 1000 * 60)] - max idle time before destroying a session. env: SESSION_ID_IDLE_TIME
  * @param {string}   [options.name=s_id] - Name of the cookie. env: SESSION_ID_NAME
  * @param {function} [options.genId=uuid/v4] - function to generate id's. see {@link https://www.npmjs.com/package/uuid|uuid/v4}
  * @param {object}   [options.cookie={}] - config to pass to cookies. see {@link https://www.npmjs.com/package/cookie|cookie}
