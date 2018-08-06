@@ -6,6 +6,7 @@ const config = {
   genId: uuidv4,
   // cookie options.
   cookie: {},
+  batata: 1,
 };
 
 export default config;
