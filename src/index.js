@@ -7,8 +7,8 @@ import baseConfig from './config';
  * @param {object}   options
  * @param {number}   [options.idleTime=(30 * 1000 * 60)] - max idle time before destoying a session. env: SESSION_ID_IDLE_TIME
  * @param {string}   [options.name=s_id] - Name of the cookie. env: SESSION_ID_NAME
- * @param {function} [options.genId=uuid/v4] - function to generate id's. see [uuid/v4]{@link https://www.npmjs.com/package/uuid}
- * @param {object}   [options.cookie={}] - config to pass to cookies see [cookie]{@link https://www.npmjs.com/package/cookie}
+ * @param {function} [options.genId=uuid/v4] - function to generate id's. see {@link https://www.npmjs.com/package/uuid|uuid/v4}
+ * @param {object}   [options.cookie={}] - config to pass to cookies. see {@link https://www.npmjs.com/package/cookie|cookie}
  */
 function sessionId(options = {}) {
   const config = merge({}, baseConfig, options);
