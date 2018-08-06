@@ -27,4 +27,5 @@ function sessionId(options = {}) {
   };
 }
 
+module.exports = sessionId;
 export default sessionId;
