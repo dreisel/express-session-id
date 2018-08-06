@@ -40,17 +40,7 @@ app.get('/', (req, res) => {
 
 #### Table of Contents
 
--   [config](#config)
 -   [sessionId](#sessionid)
-
-### config
-
-**Properties**
-
--   `idleTime` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** max IdleTime
--   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Name of the cookie.
--   `genId` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** function to generate id's
--   `cookie` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** cookies configurations
 
 ### sessionId
 
@@ -59,9 +49,11 @@ The session id is placed at req.sessionID
 
 **Parameters**
 
--   `options` **[config](#config)** configuration object. (optional, default `{}`)
-
-Returns **any** an express session ID middleware.
+-   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)**  (optional, default `{}`)
+    -   `options.idleTime` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** max idle time before destoying a session. env: SESSION_ID_IDLE_TIME (optional, default `(30*1000*60)`)
+    -   `options.name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Name of the cookie. env: SESSION_ID_NAME (optional, default `s_id`)
+    -   `options.genId` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** function to generate id's. see [uuid/v4]<https://www.npmjs.com/package/uuid> (optional, default `uuid/v4`)
+    -   `options.cookie` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** config to pass to cookies see [cookie]<https://www.npmjs.com/package/cookie> (optional, default `{}`)
 
 ## License
 
