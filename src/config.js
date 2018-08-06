@@ -8,6 +8,7 @@ const config = {
   cookie: {},
   batata: 1,
   batata2: 1,
+  batata3: 1,
 };
 
 export default config;
