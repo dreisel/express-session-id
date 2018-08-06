@@ -4,8 +4,11 @@ import baseConfig from './config';
 /**
  * This function return a session id middleware.
  * The session id is placed at req.sessionID
- * @param {config} options configuration object.
- * @returns an express session ID middleware.
+ * @param {object}   options
+ * @param {number}   [options.idleTime=(30 * 1000 * 60)] - max idle time before destoying a session. env: SESSION_ID_IDLE_TIME
+ * @param {string}   [options.name=s_id] - Name of the cookie. env: SESSION_ID_NAME
+ * @param {function} [options.genId=uuid/v4] - function to generate id's. see [uuid/v4]{@link https://www.npmjs.com/package/uuid}
+ * @param {object}   [options.cookie={}] - config to pass to cookies see [cookie]{@link https://www.npmjs.com/package/cookie}
  */
 function sessionId(options = {}) {
   const config = merge({}, baseConfig, options);
