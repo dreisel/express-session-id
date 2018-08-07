@@ -2,7 +2,7 @@
 
 [![Generated with nod](https://img.shields.io/badge/generator-nod-2196F3.svg?style=flat-square)](https://github.com/diegohaz/nod)
 [![NPM version](https://img.shields.io/npm/v/express-session-id.svg?style=flat-square)](https://npmjs.org/package/express-session-id)
-[![Build Status](https://img.shields.io/travis/reisel/express-session-id/master.svg?style=flat-square)](https://travis-ci.org/reisel/express-session-id) [![Coverage Status](https://img.shields.io/codecov/c/github/reisel/express-session-id/master.svg?style=flat-square)](https://codecov.io/gh/reisel/express-session-id/branch/master)
+[![Build Status](https://travis-ci.org/dreisel/express-session-id.svg?branch=master)](https://travis-ci.org/dreisel/express-session-id) [![Coverage Status](https://img.shields.io/codecov/c/github/dreisel/express-session-id/master.svg?style=flat-square)](https://codecov.io/gh/dreisel/express-session-id/branch/master)
 
 An express middleware for session ID
 
@@ -52,8 +52,8 @@ The session id is placed at req.sessionID
 -   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)**  (optional, default `{}`)
     -   `options.idleTime` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** max idle time before destoying a session. env: SESSION_ID_IDLE_TIME (optional, default `(30*1000*60)`)
     -   `options.name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Name of the cookie. env: SESSION_ID_NAME (optional, default `s_id`)
-    -   `options.genId` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** function to generate id's. see [uuid/v4]<https://www.npmjs.com/package/uuid> (optional, default `uuid/v4`)
-    -   `options.cookie` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** config to pass to cookies see [cookie]<https://www.npmjs.com/package/cookie> (optional, default `{}`)
+    -   `options.genId` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** function to generate id's. see [uuid/v4](https://www.npmjs.com/package/uuid) (optional, default `uuid/v4`)
+    -   `options.cookie` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** config to pass to cookies. see [cookie](https://www.npmjs.com/package/cookie) (optional, default `{}`)
 
 ## License
 
