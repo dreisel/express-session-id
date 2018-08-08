@@ -4,7 +4,8 @@
 [![NPM version](https://img.shields.io/npm/v/express-session-id.svg?style=flat-square)](https://npmjs.org/package/express-session-id)
 [![Build Status](https://travis-ci.org/dreisel/express-session-id.svg?branch=master)](https://travis-ci.org/dreisel/express-session-id) [![Coverage Status](https://img.shields.io/codecov/c/github/dreisel/express-session-id/master.svg?style=flat-square)](https://codecov.io/gh/dreisel/express-session-id/branch/master)
 
-An express middleware for session ID
+An express middleware for session ID.
+Mainly Used for analytics session tracking.
 
 ## Install
 
