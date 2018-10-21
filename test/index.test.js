@@ -58,6 +58,17 @@ describe('sessionId', () => {
     expect(Number.parseInt(sessionCookie['Max-Age'], 10) * 1000).toBe(idleTime);
     expect(sessionCookie.session_id).toBe('testing123');
   });
+  test('Fail!!!!! an existing session', async () => {
+    const response = await request(app)
+    .get('/')
+    .set('Cookie', ['session_id=testing123']);
+    const sessionCookie = _.get(response, 'headers[set-cookie]', [])
+    .map(cookie.parse)
+    .find(x => x.session_id);
+    expect(Number.parseInt(sessionCookie['Max-Age'], 10) * 1000).toBe(idleTime);
+    expect(sessionCookie.session_id).toBe('testing123');
+    expect(1).toBe(2)
+  });
   test('test signed cookies', async () => {
     app = express();
     app.use(cookieParser('secret_key!'));
