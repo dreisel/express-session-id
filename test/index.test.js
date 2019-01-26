@@ -1,10 +1,10 @@
-import express from 'express';
-import cookieParser from 'cookie-parser';
-import cookie from 'cookie';
-import request from 'supertest';
-import _ from 'lodash';
-import uuid from 'uuid/v4';
-import sessionId from '../src';
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const cookie = require('cookie');
+const request = require('supertest');
+const _ = require('lodash');
+const uuid = require('uuid/v4');
+const sessionId = require('../src');
 
 const genIdMock = jest.fn();
 const idleTime = 5 * 1000 * 60;

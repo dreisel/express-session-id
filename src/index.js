@@ -1,5 +1,5 @@
-import merge from 'lodash.merge';
-import baseConfig from './config';
+const merge = require('lodash.merge');
+const baseConfig = require('./config');
 
 /**
  * This function return a session id middleware.
@@ -31,4 +31,3 @@ function sessionId(options = {}) {
 }
 
 module.exports = sessionId;
-export default sessionId;
