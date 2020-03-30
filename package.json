@@ -35,22 +35,22 @@
     "express-session-id"
   ],
   "dependencies": {
-    "lodash.merge": "^4.6.1",
+    "lodash.merge": "^4.6.2",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
     "cookie": "^0.3.1",
     "cookie-parser": "^1.4.3",
-    "documentation": "^7.1.0",
+    "documentation": "^12.1.4",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-prettier": "^2.6.0",
     "express": "^4.16.3",
-    "jest-cli": "^24.0.0",
-    "lodash": "^4.17.10",
-    "opn-cli": "^3.1.0",
+    "jest-cli": "^25.2.4",
+    "lodash": "^4.17.15",
+    "opn-cli": "^4.1.0",
     "prettier": "^1.11.1",
     "rimraf": "^2.6.2",
     "standard-changelog": "^2.0.0",
