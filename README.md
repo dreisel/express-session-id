@@ -42,13 +42,14 @@ app.get('/', (req, res) => {
 #### Table of Contents
 
 -   [sessionId](#sessionid)
+    -   [Parameters](#parameters)
 
 ### sessionId
 
 This function return a session id middleware.
 The session id is placed at req.sessionID
 
-**Parameters**
+#### Parameters
 
 -   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)**  (optional, default `{}`)
     -   `options.idleTime` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** max idle time before destoying a session. env: SESSION_ID_IDLE_TIME (optional, default `(30*1000*60)`)
