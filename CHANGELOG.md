@@ -1,3 +1,7 @@
+## [2.0.5](https://github.com/dreisel/express-session-id/compare/v2.0.4...v2.0.5) (2020-09-21)
+
+
+
 <a name="2.0.4"></a>
 ## [2.0.4](https://github.com/dreisel/express-session-id/compare/v2.0.3...v2.0.4) (2020-03-31)
 
