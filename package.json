@@ -41,7 +41,7 @@
   "devDependencies": {
     "cookie": "^0.3.1",
     "cookie-parser": "^1.4.3",
-    "documentation": "^12.1.4",
+    "documentation": "^14.0.2",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
